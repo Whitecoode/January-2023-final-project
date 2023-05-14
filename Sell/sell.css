@@ -35,11 +35,13 @@ div.general-body > div:nth-child(1) > div:nth-child(1) > div img {
 div.general-body > div:nth-child(2) {
   width: 100%;
   height: auto;
+  /* background-color: red; */
 }
 div.general-body > div:nth-child(2) > div {
   width: 90%;
   margin: auto;
   margin-top: 10px;
+  /* background-color: yellow; */
 }
 div.general-body > div:nth-child(2) > div:nth-child(1),
 div.general-body > div:nth-child(2) > div:nth-child(3),
