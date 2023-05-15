@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  font-family: "Montserrat";
   background: #7878780c;
 }
 div.general-body > div:nth-child(1) {
@@ -192,6 +193,17 @@ div.general-body > div:nth-child(3) > div:nth-child(2) > div a {
   }
   div.general-body > div:nth-child(3) > div:nth-child(2) > div img {
     margin-top: 0px;
+  }
+  div.general-body
+    > div:nth-child(2)
+    > div
+    > div
+    > div:nth-child(2)
+    > div:nth-child(1) {
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 560px) {

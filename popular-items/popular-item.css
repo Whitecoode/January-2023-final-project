@@ -5,6 +5,7 @@
   }
   body {
     background: #7878780c;
+    font-family: "Montserrat";
   }
   div.general-body > div:nth-child(1) {
     width: 100%;
