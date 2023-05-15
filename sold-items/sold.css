@@ -1,0 +1,195 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: #7878780c;
+  font-family: "Montserrat";
+}
+div.general-body > div:nth-child(1) {
+  width: 100%;
+  height: 60px;
+  padding: 10px 0px;
+}
+div.general-body > div:nth-child(1) > div:nth-child(1) {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #d08840;
+}
+div.general-body > div:nth-child(1) > div:nth-child(1) > div p {
+  font-weight: 600;
+  font-size: 21px;
+  color: #252525;
+}
+div.general-body > div:nth-child(1) > div:nth-child(1) > div {
+  width: 55%;
+  height: auto;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+div.general-body > div:nth-child(1) > div:nth-child(1) > div img {
+  width: 20px;
+  margin-top: 5px;
+}
+div.general-body > div:nth-child(2) {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px 0px;
+}
+div.general-body > div:nth-child(2) > div {
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+div.general-body > div:nth-child(2) > div > div {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  padding-right: 50px;
+}
+div.general-body > div:nth-child(2) > div > div > div > img {
+  width: 200px;
+  height: 150px;
+}
+div.general-body > div:nth-child(2) > div > div > div:nth-child(1) {
+  width: auto;
+  height: auto;
+  display: flex;
+  /* background-color: red; */
+}
+div.general-body > div:nth-child(2) > div > div > div:nth-child(2) {
+  width: auto;
+  height: auto;
+  /* background-color: red; */
+  padding: 30px 0px;
+}
+div.texts {
+  margin-left: 10px;
+}
+div.texts > h3,
+div.texts > p:nth-child(3) {
+  margin-top: 20px;
+}
+div.texts > p {
+  font-size: 12px;
+}
+div.texts > p:nth-child(3) {
+  font-weight: 600;
+}
+div.texts > p:nth-child(1) {
+  margin-top: 10px;
+}
+div.num {
+  align-self: end;
+}
+
+div.general-body > div:nth-child(3) {
+  width: 100%;
+  height: 33vh;
+}
+div.general-body > div:nth-child(3) > div:nth-child(1) {
+  width: 100%;
+  height: 15vh;
+  background: #1c2838;
+  margin-top: 30px;
+  color: white;
+}
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+div.general-body > div:nth-child(3) > div:nth-child(1) > ul {
+  justify-content: space-evenly;
+  margin: auto;
+  display: flex;
+  width: 60%;
+}
+ul > div,
+ul > li {
+  margin-top: 30px;
+}
+div.general-body > div:nth-child(3) > div:nth-child(2) {
+  width: 100%;
+  height: 10vh;
+  background: #1c2838;
+  margin-top: 25px;
+}
+div.general-body > div:nth-child(3) > div:nth-child(2) > div {
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+}
+div.general-body > div:nth-child(3) > div:nth-child(2) > div img {
+  width: 130px;
+  height: 50px;
+  margin-top: 5px;
+}
+div.general-body > div:nth-child(3) > div:nth-child(2) > div a {
+  margin: auto;
+}
+@media screen and (max-width: 992px) {
+  div.general-body > div:nth-child(1) > div:nth-child(1) > div {
+    width: 60%;
+  }
+  div.general-body > div:nth-child(3) > div:nth-child(2) > div img {
+    width: 110px;
+    height: 40px;
+  }
+  li > a {
+    font-size: 15px;
+  }
+  div.general-body > div:nth-child(3) > div:nth-child(1) > ul {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  div.general-body > div:nth-child(3) > div:nth-child(1) > ul {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  div.general-body > div:nth-child(1) > div:nth-child(1) > div p {
+    font-size: 17px;
+  }
+  div.general-body > div:nth-child(3) > div:nth-child(1) > ul {
+    width: 100%;
+  }
+  li > a {
+    font-size: 12px;
+  }
+  div.general-body > div:nth-child(2) > div > div{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  div.general-body > div:nth-child(3) > div:nth-child(2) > div a {
+    font-size: 13px;
+  }
+  div.general-body > div:nth-child(3) > div:nth-child(1) > ul {
+    font-size: 11px;
+  }
+  li > a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  div.general-body > div:nth-child(1) > div:nth-child(1) > div p {
+    font-size: 15px;
+  }
+  li > a {
+    font-size: 9px;
+  }
+}
