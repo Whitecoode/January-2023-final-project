@@ -27,18 +27,24 @@
             <!-- <div class="empty2"></div> -->
         </div>
         <div class="center">
-            <form action="">
+            <form action="" ona="">
             <div class="form2">
-                 <div class="email">
+                 <div class="email" class="input">
                     <label for="">Email:</label><br>
-                     <input type="email" placeholder="Enter email">
+                     <input type="email" class="input" placeholder="Enter email">
                 </div>
                 <div class="password">
                   <label for="">Password:</label><br>
-                  <input type="password" placeholder="password">
+                  <div class="pass">
+                    <input type="password" class="input" placeholder="password">
+                    <div class="eye"><i class="fa-solid fa-eye"></i></div>
+                    <div class="eye"><i class="fa-solid fa-eye-slash"></i></div>
+                  </div>
                 </div>
                 <a href="#">forget password?</a>
-                <div class="btn-sign"> <button type="submit">Sign in</button></div>
+                <div class="btn-sign"> 
+                    <button type="submit" oninput="disable">Sign in</button>
+                </div>
             </div>
             </form>
         </div>
@@ -92,5 +98,6 @@
         
         </div>
    </div>
+   <script src="sign-in.js"></script>
 </body>
 </html>

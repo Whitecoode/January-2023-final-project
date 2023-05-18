@@ -89,14 +89,34 @@ label{
     border: 1px solid #1C2838;
     outline: none;
 }
-.password input{
-    width: 100%;
-    height: 2.5rem;
-    margin:20px 0 0 0;
-    padding: 10px;
+.pass{
+    width:100% ;
     background: none;
     border-radius: 12px;
     border: 1px solid #1C2838;
+    outline: none;
+    margin:20px 0 0 0;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+.eye .fa-eye-slash{
+    display: none;
+    cursor: pointer;
+}
+.eye .fa-eye{
+    /* display: none; */
+    cursor: pointer;
+}
+.password input{
+    width: 90%;
+    height: 2.5rem;
+    /* margin:20px 0 0 0; */
+    padding: 10px;
+    background: none;
+    border-radius: 12px;
+    border: none;
+    /* border: 1px solid #1C2838; */
     outline: none;
 }
 .form2 a{
