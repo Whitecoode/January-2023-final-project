@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat';
+    background: #F1F1F1;
+}
+.report{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 30px;
+}
+.empty{
+    height: 30px;
+    width: 20px;
+}
+.rep{
+    text-align: center;
+}
+.hr{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    width: 60%;
+    text-align: center;
+    background-color: #D08840;
+    height: 3px;
+    border: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+form{
+    background-color:white;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.form2{
+    width: 80%;
+    padding-top: 30px;
+}
+
+label{
+    font-weight: 700;
+}
+.name  input{
+    width: 100%;
+    height: 2.5rem;
+    margin:20px 0 20px 0;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #1C2838;
+    outline: none;
+}
+.email  input{
+    width: 100%;
+    height: 2.5rem;
+    margin:20px 0 20px 0;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #1C2838;
+    outline: none;
+}
+.location  input{
+    width: 100%;
+    height: 3rem;
+    margin:20px 0 20px 0;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #1C2838;
+    outline: none
+
+}
+.complaints textarea{
+    resize: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    width:100% ;
+    height: 20vh;
+}
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+}
+.btn-submit button{
+    padding: 13px 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    background: #D08840;
+    border: none;
+}
+.empty2{
+    width: 70px;
+}
+@media screen and (max-width:576px) {
+    form{
+        width: 98%;
+    }
+}
+@media screen and (max-width:360px){
+    
+    .rep h1{
+        font-size: 25px;
+    }
+}

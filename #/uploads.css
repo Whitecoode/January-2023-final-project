@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+body{
+    font-family: "montserrat";
+}
+.order-container{
+    height: 45px;
+    border: 2px solid #D08840;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.header{
+    padding-left: 8%;
+    display: inline-flex;
+    align-items: center;
+    padding-top:5px ;
+    padding-bottom: 10px;
+   
+}
+.header h2{
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 500px;
+}
+.headings{
+    padding-left:  8%;
+    padding-right: 8%;
+}
+.heading-content{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.heading-content .span1, .span2{
+   cursor: pointer;
+   text-align: center;
+   width: 320px;
+}
+.span1 h1, .span2 h1{
+    font-weight: 400;
+    font-size: 27px;
+}
+.heading-content .span1{
+    border-bottom: 2px solid  #D08840;
+}
+
+.com-can{
+    display: flex;
+    gap: 5px;
+    height: 180px;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.price-text{
+    width: 100%;
+    padding: 15px 20px 20px 10px;
+    
+}
+.h-text{
+    width: 130px;
+    margin-bottom: 20px;
+}
+.h-text p{
+    font-size: 14px;
+}
+.hashtag-price{
+    display: flex;
+   justify-content: space-between;
+   margin-top: 35px;
+   
+}
+.status-text p{
+    font-weight: 500;
+    font-size: 28px;
+}
+.btn-sold-item{
+    text-decoration: none;
+    border: 2px solid #D08840;
+    border-radius: 15px;
+    height: 30px;
+    width: 150px;
+    padding: 10px;
+    color: #D08840;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width:992px) {
+  
+    .header h2 {
+        margin-left: 400px;
+    }
+    .status-text p{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width:768px) {
+  
+    .header h2 {
+        margin-left: 250px;
+    }
+    .h-text {
+        margin-bottom: 20px;
+    }
+    .hashtag-price {
+    margin-top: 20px;
+}
+
+.status-text p{
+    font-size: 17px;
+}
+}
+@media screen and (max-width:560px) {
+    
+    .header{
+        padding-top: 6px;
+    }
+
+    .header h2 {
+        font-size: 18px;
+        margin-left: 150px;
+    }
+    .h-text {
+        margin-bottom: 15px;
+    }
+    .hashtag-price {
+    margin-top: 17px;
+}
+.hashtag-price h4{
+    font-size: 13px; 
+}
+.hashtag-price h2 {
+    font-size: 13px;
+}
+.h-text p {
+    font-size: 12px;
+}
+.status-text p{
+    font-size: 13px;
+}
+
+
+}
+@media screen and (max-width:375px) {
+
+    .header h2 {
+        font-size: 15px;
+        margin-left: 60px;
+    }
+    .header{
+        padding-top: 12px;
+    }
+    .price-text {
+        padding: 0;
+        width: 155px; 
+
+    }
+    .status-text p{
+       font-size: 12px;
+       font-weight: 500;
+    }
+    .h-text {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .hashtag-price {
+    margin-top: 9px;
+}
+    .h-text h4 {
+        font-size: 12px;
+    }
+    .hashtag-price h2 {
+        font-size: 14px;
+    }
+    .hashtag-price h4 {
+        font-size: 12px;
+    }
+     .com-can {
+        height: 120px;
+    }
+    .h-text p {
+        font-size: 8px;
+    }
+
+}

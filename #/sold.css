@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: #7878780c;
+  font-family: "Montserrat";
+}
+div.general-body > div:nth-child(1) {
+  width: 100%;
+  height: 60px;
+  padding: 10px 0px;
+}
+div.general-body > div:nth-child(1) > div:nth-child(1) {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #d08840;
+}
+div.general-body > div:nth-child(1) > div:nth-child(1) > div p {
+  font-weight: 600;
+  font-size: 21px;
+  color: #252525;
+}
+div.general-body > div:nth-child(1) > div:nth-child(1) > div {
+  width: 55%;
+  height: auto;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+div.general-body > div:nth-child(1) > div:nth-child(1) > div img {
+  width: 20px;
+  margin-top: 5px;
+}
+div.general-body > div:nth-child(2) {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px 0px;
+}
+div.general-body > div:nth-child(2) > div {
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+div.general-body > div:nth-child(2) > div > div {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  padding-right: 50px;
+}
+div.general-body > div:nth-child(2) > div > div > div > img {
+  width: 200px;
+  height: 150px;
+}
+div.general-body > div:nth-child(2) > div > div > div:nth-child(1) {
+  width: auto;
+  height: auto;
+  display: flex;
+  /* background-color: red; */
+}
+div.general-body > div:nth-child(2) > div > div > div:nth-child(2) {
+  width: auto;
+  height: auto;
+  /* background-color: red; */
+  padding: 30px 0px;
+}
+div.texts {
+  margin-left: 10px;
+}
+div.texts > h3,
+div.texts > p:nth-child(3) {
+  margin-top: 20px;
+}
+div.texts > p {
+  font-size: 12px;
+}
+div.texts > p:nth-child(3) {
+  font-weight: 600;
+}
+div.texts > p:nth-child(1) {
+  margin-top: 10px;
+}
+div.num {
+  align-self: end;
+}
+@media screen and (max-width: 992px) {
+  div.general-body > div:nth-child(1) > div:nth-child(1) > div {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 560px) {
+  div.general-body > div:nth-child(1) > div:nth-child(1) > div p {
+    font-size: 17px;
+  }
+  div.general-body > div:nth-child(2) > div > div{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  div.general-body > div:nth-child(1) > div:nth-child(1) > div p {
+    font-size: 15px;
+  }
+}
