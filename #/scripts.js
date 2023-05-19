@@ -45,3 +45,21 @@ dropDown2.addEventListener('click',() => {
 dropDown3.addEventListener('click',() => {
     accDrop3.classList.toggle('active');
 });
+
+
+
+// JavaScript code on the home page
+// Retrieve item data from the Firebase database
+firebase.database().ref("items").once("value").then(function(snapshot) {
+    var items = snapshot.val();
+  
+    // Handle the retrieved item data
+    var itemsContainer = document.getElementById("itemsContainer");
+    for (var itemId in items) {
+      var item = items[itemId];
+      var itemElement = document.createElement("div");
+      itemElement.innerHTML = "<h3>" + item.itemName + "</h3><p>" + item.itemDescription + "</p><img src='" + item.downloadURL + "' alt='Item Image'>";
+      itemsContainer.appendChild(itemElement);
+    }
+  });
+  
