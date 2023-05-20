@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amam Store | Sell</title>
-    <link rel="stylesheet" href="./sell.css" />
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./css/sell.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,50 +34,56 @@
       </div>
 
       <div>
-        <div>
-          <h3>Insert an image of the product</h3>
+        <form action="" id="Form">
           <div>
-            <input type="file" name="" id="" />
+            <h3>Insert an image of the product</h3>
+            <div>
+              <input type="file" id="image" name="files[]" multiple="false" accept=".jpg, .png, .svg, .jpeg" />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h3>Description:</h3>
           <div>
-            <!-- <input type="text-area" name="" id="" /> -->
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <h3>Description:</h3>
+            <div>
+              <textarea name="" id="description" cols="30" rows="10"></textarea>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h3>Location:</h3>
           <div>
-            <input type="" name="" id="" />
+            <h3>Location:</h3>
+            <div>
+              <input type="" name="" id="" />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h3>Price:</h3>
           <div>
-            <input type="" name="" id="" />
+            <h3>Price:</h3>
+            <div>
+              <input
+                type="text"
+                id="price"
+                name="itemName"
+                placeholder="Item Name"
+              />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h3>Name of Store (Optional)</h3>
           <div>
-            <input type="" name="" id="" />
+            <h3>Name of Store (Optional)</h3>
+            <div>
+              <input type="" name="" id="" />
+            </div>
           </div>
-        </div>
 
-        <div>
           <div>
-            <button>upload</button>
+            <div>
+              <button id="submit">upload</button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
 
-      <div class="main-footer"> 
+      <div class="main-footer">
         <div class="all-items">
           <ul class="all-list">
             <li>
@@ -100,5 +114,21 @@
         </div>
       </div>
     </div>
+
+    <div class="pop-up">
+      <i class="fa-solid fa-square-check" style="color: #d08840" id="tag"></i>
+      <h3>The Item has been uploaded successfully</h3>
+      <a href="sell.html">
+        <button class="ok">OK</button>
+      </a>
+    </div>
+
+    <div id="loader"></div>
+
+    <script src="./js/sell.js"></script>
+    <script src="firebase.config.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script>
   </body>
 </html>
