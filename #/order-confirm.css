@@ -5,6 +5,7 @@
 }
 body {
   background: #7878780c;
+  position: relative;
   font-family: "Montserrat";
 }
 div.general-body > div:nth-child(1) {
@@ -176,6 +177,81 @@ div.general-body > div:nth-child(2) > div > div:nth-child(4) {
   height: 15vh;
 }
 
+/* POP-UP */
+div.pop-up {
+  width: 30%;
+  height: 50vh;
+  background-color: white;
+  border-radius: 10px;
+  /* margin: auto; */
+  padding-top: 50px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+#tag {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+button.ok {
+  padding: 10px 50px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  display: none;
+  margin: -76px 0 0 -76px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #d08840;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
 @media screen and (max-width: 992px) {
   div.general-body
     > div:nth-child(2)
@@ -190,11 +266,14 @@ div.general-body > div:nth-child(2) > div > div:nth-child(4) {
   div.account > div.line {
     margin-top: 40px;
   }
-   div.general-body > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2){
+  div.general-body
+    > div:nth-child(2)
+    > div
+    > div:nth-child(1)
+    > div:nth-child(2) {
     font-size: 13px;
     width: 100%;
   }
-
 }
 @media screen and (max-width: 768px) {
   div.general-body > div:nth-child(1) > div:nth-child(1) > div {
@@ -203,9 +282,20 @@ div.general-body > div:nth-child(2) > div > div:nth-child(4) {
   div.general-body > div:nth-child(2) > div > div:nth-child(1) {
     height: 35vh;
   }
-  div.general-body > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div > button{
+  div.general-body
+    > div:nth-child(2)
+    > div
+    > div:nth-child(1)
+    > div:nth-child(3)
+    > div
+    > button {
     padding: 10px 20px;
     font-size: 10px;
+  }
+  div.pop-up{
+    width: 40%;
+    left: 30%;
+    font-size: 13px;
   }
 }
 
@@ -227,7 +317,13 @@ div.general-body > div:nth-child(2) > div > div:nth-child(4) {
   h2 {
     font-size: 18px;
   }
-  div.general-body > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div > button{
+  div.general-body
+    > div:nth-child(2)
+    > div
+    > div:nth-child(1)
+    > div:nth-child(3)
+    > div
+    > button {
     padding: 8px 15px;
     font-size: 9px;
   }
@@ -261,8 +357,19 @@ div.general-body > div:nth-child(2) > div > div:nth-child(4) {
   h2 {
     font-size: 15px;
   }
-  div.general-body > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div > button{
+  div.general-body
+    > div:nth-child(2)
+    > div
+    > div:nth-child(1)
+    > div:nth-child(3)
+    > div
+    > button {
     font-size: 6px;
+  }
+  div.pop-up{
+    width: 60%;
+    left: 20%;
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -283,5 +390,4 @@ div.general-body > div:nth-child(2) > div > div:nth-child(4) {
   div.words {
     font-size: 12px;
   }
-
 }

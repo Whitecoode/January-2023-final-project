@@ -100,6 +100,7 @@ nav{
     display: flex;
     gap: 20px;
     overflow-x: scroll;
+    overflow-y: hidden;
     position: relative;
 }
 .content-over1::-webkit-scrollbar{
@@ -107,7 +108,7 @@ nav{
 }
 .over-contain{
     height: 420px;
-    width: 320px;
+    width: 350px;
     box-shadow: 5px 5px 5px lightgrey;
 }
 .over-contain img{
