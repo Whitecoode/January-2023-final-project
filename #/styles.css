@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 1px solid red;
 }
 a{
     text-decoration: none;
@@ -156,7 +157,7 @@ nav{
     /* padding-left: 10%;
     padding-top: 8px; */
     height: 40px;
-    width: 25px;
+    width: 20px;
 }
 
 .cat-shop{
@@ -230,10 +231,12 @@ nav{
     
     justify-content: space-between;
 }
-
+.ele-con {
+    width: 100%;
+}
 .ele-con img{
     height: 230px;
-    width: 380px;
+    width: 340px;
 }
 
 .news-letter{

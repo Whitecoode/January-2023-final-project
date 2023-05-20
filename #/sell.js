@@ -1,17 +1,17 @@
 const submitButton = document.querySelector("#submit");
 
 const loader = document.querySelector("#loader");
-const bodyColor =  document.querySelector("body");
+const bodyColor = document.querySelector("body");
 const pop = document.querySelector(".pop-up");
 
-submitButton.addEventListener("click", (e)=>{
-    loader.style.display = "block";
-    bodyColor.style.backgroundColor = "lightgrey"
-    setTimeout(() => {
-        loader.style.display = "none";
-        pop.style.display = "block"
-        }, 5000);
-})
+submitButton?.addEventListener("click", (e) => {
+  loader.style.display = "block";
+  bodyColor.style.backgroundColor = "lightgrey";
+  setTimeout(() => {
+    loader.style.display = "none";
+    pop.style.display = "block";
+  }, 5000);
+});
 
 const BASE_URL = "https://amamstore-b892b-default-rtdb.firebaseio.com";
 
@@ -34,7 +34,13 @@ priceInput?.addEventListener("change", (e) => {
 });
 
 imageInput?.addEventListener("change", (e) => {
-  product.image = e.target.value;
+  var path = (window.URL || window.webkitURL).createObjectURL(
+    e.target.files[0]
+  );
+  console.log("path", path);
+  toDataURL(path).then((dataUrl) => {
+    product.image = dataUrl;
+  });
 });
 
 descriptionInput?.addEventListener("change", (e) => {
@@ -77,7 +83,7 @@ async function getAllProducts() {
 
   let htmlProduct = "";
   products.forEach(function (product) {
-    htmlProduct += `<div class = "content-over1">
+    htmlProduct += `
       <div class="over-contain">
       <a href="item.html">
           <img
@@ -95,7 +101,7 @@ async function getAllProducts() {
           </div>
         </div>
       </div>
-      </div>`;
+     `;
   });
 
   if (document.querySelector(".over-contain") != undefined) {
@@ -104,3 +110,23 @@ async function getAllProducts() {
 }
 
 getAllProducts();
+
+// file uploader
+const toDataURL = (url) =>
+  fetch(url)
+    .then((response) => {
+      return response.blob();
+    })
+    .then((blob) => {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        
+        console.log(reader);
+        reader.onloadend = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+      });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
