@@ -1,0 +1,77 @@
+@media screen and (max-width:768px) {
+    nav {
+        width: 100%;
+    }
+    .hero_section {
+        height: 90vh;
+    }
+    
+    .top_section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .top_text h1 {
+        font-family: Poppins;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #284B63;
+    }
+    
+    .top_img img {
+        position: absolute;
+        width: 256px;
+        left: 140px;
+        top: 300px;
+        z-index: -1;
+    }
+    
+    .middle_nav>ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .my_apps {
+        margin-top: 30px;
+        padding: 20px 5px;
+        width: 90%;
+    }
+    
+    .card1,
+    .card2 {
+        display: flex;
+        overflow: auto;
+        gap: 20px;
+        /* flex-shrink: 0;
+        flex-grow: 0; */
+        margin: 30px 10px;
+    }
+    
+    .app_card {
+        width: 300px;
+        height: auto;
+        flex-shrink: 0;
+        flex-grow: 0;
+        padding: 10px;
+        margin: 10px;
+    }
+    .app_download_container .app_download img {
+        width: 150px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50%;
+    }
+    
+    .links {
+        display: flex;
+        margin-top: 15px;
+    }
+}
