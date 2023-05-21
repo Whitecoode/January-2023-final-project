@@ -1,17 +1,17 @@
-// const submitButton = document.querySelector("#submit");
+const submitButton = document.querySelector("#submit");
 
-// const loader = document.querySelector("#loader");
-// const bodyColor =  document.querySelector("body");
-// const pop = document.querySelector(".pop-up");
+const loader = document.querySelector("#loader");
+const bodyColor =  document.querySelector("body");
+const pop = document.querySelector(".pop-up");
 
-// submitButton.addEventListener("click", (e)=>{
-//     loader.style.display = "block";
-//     bodyColor.style.backgroundColor = "lightgrey"
-//     setTimeout(() => {
-//         loader.style.display = "none";
-//         pop.style.display = "block"
-//         }, 5000);
-// })
+submitButton!.addEventListener("click", (e)=>{
+    loader.style.display = "block";
+    bodyColor.style.backgroundColor = "lightgrey"
+    setTimeout(() => {
+        loader.style.display = "none";
+        pop.style.display = "block"
+        }, 5000);
+})
 
 const BASE_URL = "https://amamstore-b892b-default-rtdb.firebaseio.com";
 
@@ -66,20 +66,18 @@ createProductForm?.addEventListener("submit", (event) => {
 
 //   getting all products
 async function getAllProducts() {
-    const response = await fetch(`${BASE_URL}/products.json`);
-    const data = await response.json();
-    console.log(data);
-  
-    for (const key in data) {
-      const product = { ...data[key], id: key };
-      products.push(product);
-    }
-  
-    let htmlProduct = "";
-    products.forEach(function (product) {
-      htmlProduct += `
-      
-      <div class = "content-over1">
+  const response = await fetch(`${BASE_URL}/products.json`);
+  const data = await response.json();
+  console.log(data);
+
+  for (const key in data) {
+    const product = { ...data[key], id: key };
+    products.push(product);
+  }
+
+  let htmlProduct = "";
+  products.forEach(function (product) {
+    htmlProduct += `<div class = "content-over1">
       <div class="over-contain">
       <a href="item.html">
           <img
@@ -98,21 +96,11 @@ async function getAllProducts() {
         </div>
       </div>
       </div>`;
-    });
-  
-    if (document.querySelector(".over-contain") != undefined) {
-        document.querySelector(".over-contain").innerHTML = htmlProduct;
-      }
+  });
+
+  if (document.querySelector(".over-contain") != undefined) {
+    document.querySelector(".over-contain").innerHTML = htmlProduct;
   }
-  
-  getAllProducts();
-  
+}
 
-
-
-
-
-
-
-
-
+getAllProducts();
