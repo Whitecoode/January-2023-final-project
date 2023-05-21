@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amam Store | Sell</title>
-    <link rel="stylesheet" href="./sell.css" />
+    <link rel="stylesheet" href="./css/sell.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -38,7 +38,7 @@
           <div>
             <h3>Insert an image of the product</h3>
             <div>
-              <input type="file" id="image" name="files[] " />
+              <input type="file" id="image" name="files[]" multiple="false" accept=".jpg, .png, .svg, .jpeg" />
             </div>
           </div>
 
@@ -77,11 +77,10 @@
 
           <div>
             <div>
-              <!-- <button id="submit">upload</button> -->
               <button id="submit">upload</button>
             </div>
           </div>
-        </form> 
+        </form>
       </div>
 
       <div class="main-footer">
@@ -134,8 +133,8 @@
     <div id="loader"></div>
 >>>>>>> a7e100a2b8c253dddb3e051b74dc1728c22e7f3c -->
 
-    <script src="sell.js"></script>
-    <script type="module"> src="firebase.config.js"</script>
+    <script src="./js/sell.js"></script>
+    <script src="firebase.config.js" type="module"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script>
