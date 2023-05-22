@@ -79,6 +79,6 @@ li,
 @media screen and (max-width: 360px) {
   .all-list > li > a,
   .main-footer > div > div > a {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
