@@ -27,65 +27,80 @@
     <div class="report-page">
       <div class="report">
         <a href="index.html"
-          ><div class="go-back"><i class="fa-solid fa-arrow-left"></i></div
+          ><div class="go-back"><i class="fa-solid fa-arrow-left" style="color: black;"></i></div
         ></a>
         <div class="logo">
           <img src="./img/Group 109.png" alt="" />
         </div>
         <div class="empty"></div>
       </div>
-      <div class="text">
-        <a href="register.html" class="regis"><h2>Register</h2></a>
-        <h2>Sign in</h2>
-        <!-- <div class="empty2"></div> -->
-      </div>
-      <div class="center">
-        <form action="">
-          <div class="form2">
-            <div class="email">
-              <label for="">Email:</label><br />
-              <input type="email" placeholder="Enter email" />
-            </div>
-            <div class="password">
-              <label for="">Password:</label><br />
-              <input type="password" placeholder="password" />
-            </div>
-            <a href="#">forget password?</a>
-            <div class="btn-sign"><button type="submit">Sign in</button></div>
+      <div class="empty"></div>
+    </div>
+    <div class="text">
+      <a href="register.html" class="regis">
+        <h2>Register</h2>
+      </a>
+      <h2>Sign in</h2>
+    </div>
+    <div class="center">
+      <form action="">
+        <div class="form2">
+          <div class="email">
+            <label for="">Email:</label><br />
+            <input type="email" class="input" placeholder="Enter email" oninput="formcheck()" />
           </div>
-        </form>
-      </div>
-   
-      <div class="main-footer"> 
-        <div class="all-items">
-          <ul class="all-list">
-            <li>
-              <a href="help.html"> Help centre </a>
-            </li>
-            <div>|</div>
-
-            <li>
-              <a href="contact.html"> Contact Us </a>
-            </li>
-            <div>|</div>
-
-            <li>
-              <a href=""> Terms and conditions </a>
-            </li>
-            <div>|</div>
-
-            <li>
-              <a href="report.html"> Report a product </a>
-            </li>
-          </ul>
+          <div class="password">
+            <label for="">Password:</label><br />
+            <div class="pass">
+              <input type="password" class="input" placeholder="password" oninput="formcheck()">
+              <div class="eye"><i class="fa-solid fa-eye"></i></div>
+              <div class="eye"><i class="fa-solid fa-eye-slash"></i></div>
+            </div>
+          </div>
+          <a href="#">forget password?</a>
+          <div class="btn-sign">
+            <button type="submit" disabled="disabled">
+           <a href="index.html" style="text-decoration: none; color: white;">
+            Sign in
+           </a>
+          </button>
         </div>
-        <div class="copyright">
-          <div class="flex">
-            <img src="./img/logo.png" alt="" />
-            <a href="">All Rights Reserved</a>
-          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="main-footer">
+      <div class="all-items">
+        <ul class="all-list">
+          <li>
+            <a href="help.html"> Help centre </a>
+          </li>
+          <div>|</div>
+
+          <li>
+            <a href="contact.html"> Contact Us </a>
+          </li>
+          <div>|</div>
+
+          <li>
+            <a href=""> Terms and conditions </a>
+          </li>
+          <div>|</div>
+
+          <li>
+            <a href="report.html"> Report a product </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <div class="flex">
+          <img src="./img/logo.png" alt="" />
+          <a href="">All Rights Reserved</a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  <script src="js/sign-in.js"></script>
+</body>
+
 </html>

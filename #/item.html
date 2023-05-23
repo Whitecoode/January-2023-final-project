@@ -65,7 +65,7 @@
             <img src="./img/star.png" alt="">
           </div>
           <div>
-            <img src="./img/rate-love.png" alt="">
+            <img src="./img/rate-love.png" alt="" class="love">
           </div>
         </div>
        </div>
@@ -75,10 +75,14 @@
 
       <div class="buttons">
             <div class="cart">
-                <button>Add To Cart</button>
+                <button class="add" add-to-cart>Add To Cart</button>
             </div>
             <div class="buy">
-                <button>Buy Now</button>
+							<button>
+								<a href="order-confirm.html" style="color: black;">
+										Buy Now
+								</a>
+							</button>
             </div>
       </div>
 
@@ -211,7 +215,10 @@
 
 
     <script src="./js/scripts.js"></script>
-
+		<!-- <script src="./js/wishlist.js"></script> -->
+    <script src="./js/cart.js"></script>
+		<!-- <script src="firebase.config.js" type="module"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script> -->
 
   </body>
 </html>

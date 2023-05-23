@@ -27,87 +27,100 @@
     <div class="report-page">
       <div class="report">
         <a href="sign.html"
-          ><div class="go-back"><i class="fa-solid fa-arrow-left"></i></div
+          ><div class="go-back"><i class="fa-solid fa-arrow-left" style="color: black;"></i></div
         ></a>
         <div class="logo">
           <img src="./img/Group 109.png" alt="" />
         </div>
         <div class="empty"></div>
       </div>
-      <div class="text">
-        <h2>Register</h2>
-        <h2><a href="sign.html" class="regis">Sign in</a></h2>
-        <!-- <div class="empty2"></div> -->
-      </div>
-      <div class="center">
-        <form action="">
-          <div class="form2">
-            <div class="email">
-              <label for="">First Name:</label><br />
-              <input type="text" placeholder="Enter your first name" />
+      <div class="empty"></div>
+    </div>
+    <div class="text">
+      <h2>Register</h2>
+      <h2><a href="sign.html" class="regis">Sign in</a></h2>
+    </div>
+    <div class="center">
+      <form action="">
+        <div class="form2">
+          <div class="email">
+            <label for="">First Name:</label><br />
+            <input type="text" class="input2" placeholder="Enter your first name" oninput="checkform()" />
+          </div>
+          <div class="email">
+            <label for="">Last Name:</label><br />
+            <input type="text" class="input2" placeholder="Enter your last name" oninput="checkform()" />
+          </div>
+          <div class="number">
+            <label for="">Phone Number:</label><br />
+            <input type="number" class="input2" placeholder="Enter your phone number" oninput="checkform()" />
+          </div>
+          <div class="password">
+            <label for="">Password:</label><br />
+            <div class="pass">
+              <input type="password" class="input2" placeholder="password" oninput="checkform()">
+              <div class="eye"><i class="fa-solid fa-eye"></i></div>
+              <div class="eye"><i class="fa-solid fa-eye-slash"></i></div>
             </div>
-            <div class="email">
-              <label for="">Last Name:</label><br />
-              <input type="text" placeholder="Enter your last name" />
+          </div>
+          <div class="password">
+            <label for="">Confirm Password:</label><br />
+            <div class="pass">
+              <input type="password" class="input2" placeholder="Confirm password" oninput="checkform()">
+              <div class="eye"><i class="fa-solid fa-eye"></i></div>
+              <div class="eye"><i class="fa-solid fa-eye-slash"></i></div>
             </div>
-            <div class="email">
-              <label for="">Phone Number:</label><br />
-              <input type="number" placeholder="Enter your phone number" />
-            </div>
-            <div class="email">
-              <label for="">Password:</label><br />
-              <input type="email" placeholder="Enter password" />
-            </div>
-            <div class="password">
-              <label for="">Confirm Password:</label><br />
-              <input type="password" placeholder="Confirm Password" />
-            </div>
-            <div class="address">
-              <label for="">Address:</label><br />
-              <textarea name="" id=""></textarea>
-            </div>
-            <div class="btn-register">
-              <button type="submit">
+          </div>
+          <div class="address">
+            <label for="">Address:</label><br />
+            <textarea name="" id=""></textarea>
+          </div>
+          <div class="btn-register">
+            
+              <button type="submit" class="button2" disabled="disabled">
                 <a href="sign.html" style="text-decoration: none; color: white;">
-                Register
-              </a>
-            </button>
-            </div>
+                  Register
+                </a>
+              </button>
+           
           </div>
-        </form>
-      </div>
-
-
-      <div class="main-footer"> 
-        <div class="all-items">
-          <ul class="all-list">
-            <li>
-              <a href="help.html"> Help centre </a>
-            </li>
-            <div>|</div>
-
-            <li>
-              <a href="contact.html"> Contact Us </a>
-            </li>
-            <div>|</div>
-
-            <li>
-              <a href=""> Terms and conditions </a>
-            </li>
-            <div>|</div>
-
-            <li>
-              <a href="report.html"> Report a product </a>
-            </li>
-          </ul>
         </div>
-        <div class="copyright">
-          <div class="flex">
-            <img src="./img/logo.png" alt="" />
-            <a href="">All Rights Reserved</a>
-          </div>
+      </form>
+    </div>
+
+
+    <div class="main-footer">
+      <div class="all-items">
+        <ul class="all-list">
+          <li>
+            <a href="help.html"> Help centre </a>
+          </li>
+          <div>|</div>
+
+          <li>
+            <a href="contact.html"> Contact Us </a>
+          </li>
+          <div>|</div>
+
+          <li>
+            <a href=""> Terms and conditions </a>
+          </li>
+          <div>|</div>
+
+          <li>
+            <a href="report.html"> Report a product </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <div class="flex">
+          <img src="./img/logo.png" alt="" />
+          <a href="">All Rights Reserved</a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  <script src="./js/sign-in.js"></script>
+</body>
+
 </html>
