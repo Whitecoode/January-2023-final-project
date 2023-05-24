@@ -92,7 +92,7 @@ const usersignIn = async () => {
     .then((userCredentials) => {
       const user = userCredentials.user;
       console.log(user);
-      alert('you don sign make u enjoy our services')
+      alert('you have signed in successfully')
       window.location.replace('index.html')
     })
     .catch((error) => {
