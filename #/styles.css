@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+div.navbar-menu>button>a{
+    color: white;
+}
+body{
+     background: #7878780c;
+    font-family: "montserrat";
+    position: relative;
+}
+nav{
+    background: #1C2838;
+    height: 60px;
+}
+.nav-logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo .the-log{
+    width: 120px;
+    height: 50px;
+}
+.logo-icon{
+    display: inline-flex;
+    gap: 35px;
+}
+
+.logo .bttn-for-menu, .logo-icon img{
+    transition: 1s;
+}
+.logo .bttn-for-menu:hover, .logo-icon img:hover{
+    transform: translateY(-4px);
+}
+.search-bar-container{
+    background: #D89C60;
+    height: 65px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 1%;
+}
+.search-bar{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    height: 28px;
+    background: white;
+    border-radius: 15px;
+}
+.search-bar input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+.welcome-container{
+    background: #434D5ABF;
+    height: 250px;
+    background-image: url(../amamStoreimg/blackring.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-contain{
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+    padding-top: 65px ;
+    padding-bottom: 65px ;
+    line-height: 3rem;
+}
+.text-contain h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.text-contain h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+.overflow-content{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.content-over1{
+    height: 460px;
+    padding-left: 8%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+}
+.content-over1::-webkit-scrollbar{
+    display: none;
+}
+.over-contain{
+    height: 420px;
+    width: 350px;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+.over-contain img{
+    width: 320px;
+    height: 260px;
+}
+.pad-con{
+    padding: 15px;
+}
+.over-text{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.over-text h4{
+    color: #252525;
+    font-size: 16px;
+    font-weight: 600;
+}
+.price-availablity{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.price-availablity h2{
+    color: #252525;
+    font-size: 22px;
+    font-weight: 700;
+}
+.price-availablity h3{
+    color: #454A4D;
+    font-weight: 600;
+    font-size: 13px;
+}
+.next-click, .next-click2, .next-click3{
+    width: 50%;
+    height: 25px;
+    left: 20px;
+    border-radius: 50%;
+    position: sticky;
+    top: 51%;
+}
+.next-click img, .next-click2 img, .next-click3 img{
+    /* padding-left: 10%;
+    padding-top: 8px; */
+    height: 40px;
+    width: 25px;
+}
+
+.cat-shop{
+    Height: 60px;
+    background: #1C2838;
+    margin-top: 10px;  
+    margin-bottom: 10px;
+}
+.cat-shop h2{
+    padding-top: 10px; 
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+}
+.upload-item-contain{
+    height: 500;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.upload{
+    width: 49%;
+    height: 350px;
+    background: #D89C60;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 35px;
+    position: relative;
+}
+.item{
+    width: 49%;
+    height: 350px;
+    background: #434D5A;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 35px;
+    position: relative;
+}
+.upload img, .item img{
+    position: absolute;
+    top: 10%;
+    left: 32%;
+}
+
+.upload h3, .item h3{
+   text-align: center;
+   color: #FFFFFF;
+   padding-top: 30px;
+   font-weight: 600;
+   padding-top: 300px;
+   font-size: 22px;
+}
+.plat-form{
+    Height: 90px;
+    background: #434D5A;
+    margin-top: 10px;  
+    margin-bottom: 10px;
+}
+.plat-form h2{
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 25px;  
+}
+.skew-contain{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    display: flex;
+    gap: 15px;
+    
+    justify-content: space-between;
+}
+
+.ele-con img{
+    height: 230px;
+    width: 380px;
+}
+
+.news-letter{
+    background: #D08840;
+    height: 280px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.text-letter{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 2.2rem;
+}
+.text-letter h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #141C27;
+}
+.text-letter p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+.input-email{
+    width: 650px;
+    height: 50px;
+    border-radius: 60px;
+    background: #FFFFFF;
+    margin: auto;
+    padding: 5px;
+}
+.input-email input{
+    width: 600px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+.text-letter button{
+    width: 175px;
+    height: 40px;
+    background: #141C27;
+    font-weight: 700;
+    font-size: 17px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    border: none;
+    margin-top: 25px;
+    transition: 0.5s;
+}
+.text-letter button:hover{
+    transform: scale(1.2);
+}
+.menu{
+    background: #1C2838;
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:none;
+    transition: 3s;
+    position: fixed;
+    overflow-y: scroll;
+}
+.menu::-webkit-scrollbar{
+    display: none;
+}
+.menu.active{
+    display:block;
+    
+}
+
+.menu hr{
+    margin-top: 15px;
+}
+.menu-contain{
+    padding-top: 30px;
+    padding-left: 16%;
+    padding-right: 5%;
+}
+.navbar-menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar-menu button{
+    width: 100px;
+    height: 35px;
+    background: #D08840;
+    border-radius: 15px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+.navbar-menu button:hover{
+    transform: scale(1.2);
+}
+.menu-btn{
+    display: inline-flex;
+    gap: 15px;
+}
+.cancel-btn{
+    transition: 1s;
+}
+.cancel-btn:hover{
+    transform: translateY(-4px);
+}
+.account-drop{
+    line-height: 2rem;
+}
+.acc-text-icon{
+    display: flex;
+    gap: 57%;
+    justify-content: space-between;
+    align-items: center;
+}
+.acc-text-icon h2{
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.acc-text-icon img{
+    padding-bottom: 10px;
+}
+.accdrop, .accdrop2, .accdrop3{
+    display: none;
+}
+.accdrop.active, .accdrop2.active, .accdrop3.active{
+    display:block;
+}
+.acc-display{
+    display: inline-flex;
+    gap: 7px;
+    line-height:  2.5rem;
+}
+.acc-display a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 1s;
+}
+.acc-display a:hover{
+    color: #D08840;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+.ele-con img {
+    width: 100%;
+}
+.menu {
+    width: 55%;
+}
+.acc-text-icon h2 {
+    font-size: 20px;
+}
+.upload img, .item img {
+    left: 25%;
+}
+
+.copy-logo h3 {
+    padding-left: 22%;
+}
+
+.next-click, .next-click2, .next-click3 {
+    right: 7%;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    
+.acc-text-icon h2 {
+    font-size: 15px;
+}
+.acc-display a {
+    font-size: 12px;
+}
+
+.cat-shop h2 {
+    font-size: 25px;
+}
+.plat-form h2 {
+    font-size: 27px;
+}
+.text-letter h2 {
+    font-size: 38px;
+}
+.text-letter p {
+    font-size: 18px;
+}
+.upload {
+    height: 320px
+}
+.item {
+    height: 320px;
+}
+.upload img, .item img {
+    left: 19%
+}
+.upload h3, .item h3 {
+    padding-top: 280px;
+    font-size: 19px;
+}
+.next-click, .next-click2, .next-click3 {
+    right: 7%;
+}
+
+}
+
+@media screen and (max-width: 560px) {
+
+.logo {
+    gap: 15px;
+}
+.logo-icon {
+    gap: 20px;
+}
+.upload {
+   
+    height: 220px;
+}
+.item {
+    
+    height: 220px;
+}
+.upload img, .item img {
+   height: 150px;
+    left: 22%;
+}
+   .upload h3, .item h3 {
+    padding-top: 190px;
+    font-size: 15px;
+}
+.text-contain h2 {
+    font-size: 27px;
+}
+.text-contain h3 {
+    font-size: 24px;    
+}
+.cat-shop h2 {
+    font-size: 22px;
+}
+
+.plat-form h2 {
+    font-size: 22px;
+}
+.ele-con img {
+    height: 160px;
+}
+.text-letter h2 {
+    font-size: 30px;
+}
+.text-letter p {
+    font-size: 18px;   
+}
+.input-email {
+    width: 400px;
+    height: 40px;
+}
+.input-email input {
+    width: 380px ;
+    height: 40px; 
+}
+.text-letter button {
+    width: 155px;
+    height: 30px;
+    font-size: 14px;
+}
+.over-contain {
+    height: 420px;
+    width: 290px;
+}
+.over-contain img {
+    width: 290px;
+}
+.next-click, .next-click2, .next-click3 {
+    width: 40px;
+    height: 40px;
+}
+.next-click img, .next-click2 img, .next-click3 img {
+    height: 28px;
+    width: 28px;
+    padding-left: 20%;
+    padding-top: 6px;
+}
+.cancel-btn{
+    height: 30px ;
+}
+.menu-btn img{
+    height: 30px;
+}
+.navbar-menu button {
+    width: 80px;
+    height: 33px;
+    font-size: 12px;
+}
+.menu.active {
+    width: 350px;
+}
+
+.acc-text-icon h2 {
+    font-size: 12px;
+}
+.acc-display a {
+    font-size: 11px;
+}
+
+
+}
+
+@media screen and (max-width:360px) {
+    .logo {
+    gap: 5px;
+}
+.logo img{
+    height: 20px;
+}
+
+.logo-icon {
+    gap: 10px;
+}
+.logo-icon img{
+    height: 20px;
+}
+.logo .the-log {
+    width: 80px;
+    height: 30px;
+}
+.search-bar {
+    margin-top: 6px;
+}
+.content-over1 {
+    padding-left: 0%;
+}
+
+.text-contain h2 {
+    font-size: 18px;
+}
+.text-contain h3 {
+    font-size: 16px;    
+}
+
+.cat-shop h2 {
+    font-size: 17px;
+    padding-top: 18px;
+}
+.upload {
+    height: 150px;
+}
+.item {
+    height: 150px;
+}
+.upload img, .item img {
+    height: 90px;
+    left: 25%;
+}
+.upload h3, .item h3 {
+    padding-top: 125px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.plat-form h2 {
+     font-size: 15px;
+     font-weight: 500;
+}
+.ele-con img {
+    height: 80px;
+}
+.text-letter h2 {
+    font-size: 25px;
+}
+.text-letter p {
+    font-size: 15px;
+}
+.input-email {
+    width: 300px;
+    height: 35px;
+}
+.input-email input {
+    width: 280px ;
+    height: 30px;
+}
+.text-letter button {
+    width: 130px;
+    height: 30px;
+    font-size: 11px;
+}
+.menu.active {
+    width:100%;
+}
+
+.acc-text-icon h2 {
+    font-size: 10px;
+}
+.acc-display a {
+    font-size: 10px;
+}
+
+.menu-btn img{
+    height: 25px;
+}
+.navbar-menu button {
+    width: 70px;
+    height: 28px;
+    font-size: 12px;
+}
+}
