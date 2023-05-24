@@ -1,120 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amam Store | Register</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/register.css" />
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
-    />
-  </head>
-  <body>
-    <div class="report-page">
-      <div class="report">
-        <a href="sign.html"
-          ><div class="go-back"><i class="fa-solid fa-arrow-left"></i></div
-        ></a>
-        <div class="logo">
-          <img src="./img/Group 109.png" alt="" />
-        </div>
-        <div class="empty"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amam Store | Register</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/register.css" />
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" />
+</head>
+
+<body>
+  <div class="report-page">
+    <div class="report">
+      <a href="sign.html">
+        <div class="go-back"><i class="fa-solid fa-arrow-left"></i></div>
+      </a>
+      <div class="logo">
+        <img src="./img/Group 109.png" alt="" />
       </div>
       <div class="empty"></div>
     </div>
-    <div class="text">
-      <h2>Register</h2>
-      <h2><a href="sign.html" class="regis">Sign in</a></h2>
-    </div>
-    <div class="center">
-      <form action="">
-        <div class="form2">
-          <div class="email">
-            <label for="">First Name:</label><br />
-            <input type="text" class="input2" placeholder="Enter your first name" oninput="checkform()" />
-          </div>
-          <div class="email">
-            <label for="">Last Name:</label><br />
-            <input type="text" class="input2" placeholder="Enter your last name" oninput="checkform()" />
-          </div>
-          <div class="number">
-            <label for="">Phone Number:</label><br />
-            <input type="number" class="input2" placeholder="Enter your phone number" oninput="checkform()" />
-          </div>
-          <div class="password">
-            <label for="">Password:</label><br />
-            <div class="pass">
-              <input type="password" class="input2" placeholder="password" oninput="checkform()">
-              <div class="eye"><i class="fa-solid fa-eye"></i></div>
-              <div class="eye"><i class="fa-solid fa-eye-slash"></i></div>
-            </div>
-          </div>
-          <div class="password">
-            <label for="">Confirm Password:</label><br />
-            <div class="pass">
-              <input type="password" class="input2" placeholder="Confirm password" oninput="checkform()">
-              <div class="eye"><i class="fa-solid fa-eye"></i></div>
-              <div class="eye"><i class="fa-solid fa-eye-slash"></i></div>
-            </div>
-          </div>
-          <div class="address">
-            <label for="">Address:</label><br />
-            <textarea name="" id=""></textarea>
-          </div>
-          <div class="btn-register">
-            <button type="submit" class="button2" disabled="disabled">Register</button>
+    <div class="empty"></div>
+  </div>
+  <div class="text">
+    <h2>Register</h2>
+    <h2><a href="sign.html" class="regis">Sign in</a></h2>
+  </div>
+  <div class="center">
+    <form action="" id="formregister">
+      <div class="form2">
+        <div class="email">
+          <label for="">First Name:</label><br />
+          <input type="text" class="input2" id="first" placeholder="Enter your first name" oninput="checkform()" />
+        </div>
+        <div class="email">
+          <label for="">Last Name:</label><br />
+          <input type="text" class="input2" id="last" placeholder="Enter your last name" oninput="checkform()" />
+        </div>
+        <div class="number">
+          <label for="">Email:</label><br />
+          <input type="email" id="useremail" class="input2" placeholder="Enter your phone number"
+            oninput="checkform()" />
+        </div>
+        <div class="password">
+          <label for="">Password:</label><br />
+          <div class="pass">
+            <input type="password" id="userpassword" class="input2" placeholder="password" oninput="checkform()">
+            <div class="eye"><i class="fa-solid fa-eye"></i></div>
+            <div class="eye"><i class="fa-solid fa-eye-slash"></i></div>
           </div>
         </div>
-      </form>
-    </div>
-
-
-    <div class="main-footer">
-      <div class="all-items">
-        <ul class="all-list">
-          <li>
-            <a href="help.html"> Help centre </a>
-          </li>
-          <div>|</div>
-
-          <li>
-            <a href="contact.html"> Contact Us </a>
-          </li>
-          <div>|</div>
-
-          <li>
-            <a href=""> Terms and conditions </a>
-          </li>
-          <div>|</div>
-
-          <li>
-            <a href="report.html"> Report a product </a>
-          </li>
-        </ul>
+        <div class="password">
+          <label for="">Confirm Password:</label><br />
+          <div class="pass">
+            <input type="password" class="input2" id="confirmpassword" placeholder="Confirm password"
+              oninput="checkform()">
+            <div class="eye"><i class="fa-solid fa-eye"></i></div>
+            <div class="eye"><i class="fa-solid fa-eye-slash"></i></div>
+          </div>
+        </div>
+        <div class="address">
+          <label for="">Address:</label><br />
+          <textarea name="" id="address"></textarea>
+        </div>
+        <div class="btn-register">
+          <button type="submit" class="button2" disabled="disabled">Register</button>
+        </div>
       </div>
-      <div class="copyright">
-        <div class="flex">
-          <img src="./img/logo.png" alt="" />
-          <a href="">All Rights Reserved</a>
-        </div>
+    </form>
+  </div>
+
+
+  <div class="main-footer">
+    <div class="all-items">
+      <ul class="all-list">
+        <li>
+          <a href="help.html"> Help centre </a>
+        </li>
+        <div>|</div>
+
+        <li>
+          <a href="contact.html"> Contact Us </a>
+        </li>
+        <div>|</div>
+
+        <li>
+          <a href=""> Terms and conditions </a>
+        </li>
+        <div>|</div>
+
+        <li>
+          <a href="report.html"> Report a product </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <div class="flex">
+        <img src="./img/logo.png" alt="" />
+        <a href="">All Rights Reserved</a>
       </div>
     </div>
   </div>
+  </div>
   <script src="./js/sign-in.js"></script>
+  <script type="module" src="./js/auth.js"></script>
 </body>
 
 </html>

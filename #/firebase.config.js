@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDHi0WXilV2fRp3KRScOwKJS-Ln741nbxs",
   authDomain: "amamstore-b892b.firebaseapp.com",
@@ -15,8 +16,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-firebase.initializeApp(firebaseConfig);
-// var messagesRef = firebase.database().ref("Checking");
 document.getElementById("contactForm")?.addEventListener("submit", submitForm);
 //uploading file in storage
 function uploadimage() {
