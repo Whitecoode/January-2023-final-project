@@ -23,11 +23,12 @@ function addToCart() {
   localStorage.setItem("carts", JSON.stringify(carts));
 }
 
-function getCartItem(){
-    const carts = JSON.parse(localStorage.getItem("carts"));
-    let cartHTML = '';
-    carts.forEach(function(value){
-        cartHTML += `<div class="cart">
+function getCartItem() {
+  const carts = JSON.parse(localStorage.getItem("carts"));
+  let cartHTML = "";
+  carts.forEach(function (value) {
+    let idGenerated = Math.floor(Math.random() * 10001);
+    cartHTML += `<div class="cart" id= "item-${idGenerated}">
         <div class="cart-item">
           <div class="radio"><input type="radio" name="" id="" /></div>
           <div class="cartimg">
@@ -39,82 +40,68 @@ function getCartItem(){
               <h2>Price: <span>${value.price}</span></h2>
             </div>
             <div class="incress">
+              <span onclick="increaseQty('counter-${idGenerated}')">
               <i class="fa-solid fa-square-plus" style="color: #d08840"></i>
-              <p class="counter">1</p>
+              </span>
+              <p class="counter" id= "counter-${idGenerated}">1</p>
+              <span onclick="decreaseQty('counter-${idGenerated}')">
               <i class="fa-solid fa-square-minus" style="color: #d08840"></i>
+              </span>
             </div>
           </div>
         </div>
-        <div class="remove">
+        <div class="remove" onclick="removeItem('item-${idGenerated}')">
           <button><i class="fa-solid fa-trash-can"></i>Remove</button>
         </div>
         </div>`;
-        if(document.querySelector(".carts__container") != undefined){
-          document.querySelector(".carts__container").innerHTML = cartHTML;
-        }
-      
-const deleteBtn = document.querySelectorAll(".remove button");
-      deleteBtn.forEach(function (deletebtn, index) {
-        deletebtn.addEventListener("click", function () {
-          console.log("remove");
-          if (confirm("Are you sure you want to remove the item")) {
-            items[index].remove();
-          }
-        });
-      });
-    });
+    if (document.querySelector(".carts__container") != undefined) {
+      document.querySelector(".carts__container").innerHTML = cartHTML;
+    }
+  });
 }
 
 getCartItem();
-plus.forEach(function (plus, index) {
-  plus.addEventListener("click", () => {
-    countValue[index].textContent = Number(countValue[index].textContent) + 1;
-  });
-});
-minus.forEach(function (minus, index) {
-  minus.addEventListener("click", () => {
-    countValue[index].textContent =
-      countValue[index].textContent <= 1
-        ? 1
-        : Number(countValue[index].textContent) - 1;
-  });
-});
 
+function increaseQty(data) {
+  let newValue = parseInt(document.getElementById(data).innerText) + 1;
 
+  document.getElementById(data).innerText = newValue;
+}
 
+function decreaseQty(data) {
+  let newValue = parseInt(document.getElementById(data).innerText) - 1;
 
+  if(parseInt(document.getElementById(data).innerText) <= 1) {
+    return;
+   }
 
-
-
-
-
+  document.getElementById(data).innerText = newValue;
+}
 
 const addToWishlistButton = document.querySelector(".love");
 
-
 console.log(addToWishlist);
-
 
 const wishes = [];
 const wishOBJ = {
-    title: itemTitle ?? "",
-    price: itemPrice ?? "",
-    imageSrc: itemImage ?? "",
-}
+  title: itemTitle ?? "",
+  price: itemPrice ?? "",
+  imageSrc: itemImage ?? "",
+};
 
 addToWishlistButton?.addEventListener("click", addToWishlist);
 function addToWishlist() {
-    wishes.push(wishOBJ);
-    localStorage.setItem("wishes", JSON.stringify(wishes));
+  wishes.push(wishOBJ);
+  localStorage.setItem("wishes", JSON.stringify(wishes));
 }
 
-function getWishItem(){
-    const wishes = JSON.parse(localStorage.getItem("wishes"));
-    let wishHTML = '';
+function getWishItem() {
+  const wishes = JSON.parse(localStorage.getItem("wishes"));
+  let wishHTML = "";
 
-
-    wishes.forEach(function(value){
-        wishHTML += `<div class="cart" style="margin-top: 15px;">
+  wishes.forEach(function (value) {
+    let idGenerated = Math.floor(Math.random() * 10001);
+    wishHTML += `<div class="cart" style="margin-top: 15px; display: flex;" id= "item-${idGenerated}">
         <div class="cart-item">
           <div class="radio"><input type="radio" name="" id="" /></div>
           <div class="cartimg">
@@ -127,33 +114,25 @@ function getWishItem(){
             </div>
           </div>
         </div>
+        <div class="remove" style="margin: auto;" onclick="removeItem('item-${idGenerated}')">
+        <button>Remove</button>
+      </div>
         </div>`;
-        if(document.querySelector(".whistlist__container") != undefined){
-          document.querySelector(".whistlist__container").innerHTML = wishHTML;
-        }
-      
-      });
+    if (document.querySelector(".whistlist__container") != undefined) {
+      document.querySelector(".whistlist__container").innerHTML = wishHTML;
     }
-    // deleteBtn.forEach(function (deletebtn, index) {
-    //   deletebtn.addEventListener("click", function () {
-    //     console.log("remove");
-    //     if (confirm("Are you sure you want to remove the item")) {
-    //       items[index].remove();
-    //     }
-    //   });
-    // });
+  });
+}
 
 getWishItem();
-plus.forEach(function (plus, index) {
-  plus.addEventListener("click", () => {
-    countValue[index].textContent = Number(countValue[index].textContent) + 1;
-  });
-});
-minus.forEach(function (minus, index) {
-  minus.addEventListener("click", () => {
-    countValue[index].textContent =
-      countValue[index].textContent <= 1
-        ? 1
-        : Number(countValue[index].textContent) - 1;
-  });
-});
+
+function removeItem(idGenerated) {
+  if (confirm("Are you sure you want to remove this item from cart?")) {
+    let itemRemoved = document.getElementById(idGenerated).remove();
+    
+    if (itemRemoved) console.log("Item removed from cart");
+  }
+  const carts = JSON.parse(localStorage.getItem("carts"));
+
+  console.log(carts);
+}

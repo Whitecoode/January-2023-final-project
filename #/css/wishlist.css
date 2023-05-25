@@ -82,6 +82,13 @@ div.general-body > div:nth-child(2) > div p {
   flex-wrap: wrap;
   width: 65%;
 }
+button{
+  padding: 10px 30px;
+  background-color: #d08840;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
 
 @media screen and (max-width:992px) {
   div.general-body > div:nth-child(2) > div{
@@ -94,6 +101,9 @@ div.general-body > div:nth-child(2) > div p {
     margin-bottom: 70px;
   }
   .cart-item{
+    flex-direction: column;
+  }
+  .cart{
     flex-direction: column;
   }
   h2,p{
