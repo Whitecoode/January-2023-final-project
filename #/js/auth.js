@@ -103,7 +103,7 @@ const usersignIn = async () => {
     })
 };
 
-formSign.addEventListener('submit', (e) => {
+formSign?.addEventListener('submit', (e) => {
   e.preventDefault()
   usersignIn()
 })
