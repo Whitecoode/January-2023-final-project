@@ -145,6 +145,10 @@ label{
     background: #f0e9e0;
     border: none;
 }
+.btn-register button a{
+    color: white;
+    text-decoration: none;
+}
 .empty2{
     width: 70px;
 }
