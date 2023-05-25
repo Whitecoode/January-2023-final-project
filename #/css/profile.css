@@ -91,10 +91,14 @@ div.general-body > div:nth-child(2) > div:nth-child(3) > div > div a {
   text-decoration: none;
   color: black;
 }
+.way{
+  width: 12px;
+  height: 15px;
+}
 div.general-body > div:nth-child(2) > div:nth-child(1) > div img:nth-child(1) {
-  width: 15px;
+  width: 10px;
   margin-top: 3px;
-  height: 18px;
+  height: 15px;
 }
 div.general-body > div:nth-child(2) > div:nth-child(1) > div img:nth-child(2),
 div.general-body > div:nth-child(2) > div:nth-child(3) > div img:nth-child(2) {

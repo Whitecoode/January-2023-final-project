@@ -26,7 +26,7 @@ function addToCart() {
 function getCartItem() {
   const carts = JSON.parse(localStorage.getItem("carts"));
   let cartHTML = "";
-  carts.forEach(function (value) {
+  carts?.forEach(function (value) {
     let idGenerated = Math.floor(Math.random() * 10001);
     cartHTML += `<div class="cart" id= "item-${idGenerated}">
         <div class="cart-item">
@@ -99,7 +99,7 @@ function getWishItem() {
   const wishes = JSON.parse(localStorage.getItem("wishes"));
   let wishHTML = "";
 
-  wishes.forEach(function (value) {
+  wishes?.forEach(function (value) {
     let idGenerated = Math.floor(Math.random() * 10001);
     wishHTML += `<div class="cart" style="margin-top: 15px; display: flex;" id= "item-${idGenerated}">
         <div class="cart-item">
@@ -132,7 +132,7 @@ function removeItem(idGenerated) {
     
     if (itemRemoved) console.log("Item removed from cart");
   }
-  const carts = JSON.parse(localStorage.getItem("carts"));
-
-  console.log(carts);
+  // const carts = JSON.parse(localStorage.getItem("carts"));
+  localStorage.clear();
+  // console.log(carts);
 }

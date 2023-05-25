@@ -16,7 +16,7 @@ body {
 }
 nav {
   background: #1c2838;
-  height: 60px;
+  height: 55px;
 }
 .nav-logo-container {
   display: flex;
@@ -63,6 +63,7 @@ nav {
   height: 28px;
   background: white;
   border-radius: 15px;
+  margin-top: 2px;
 }
 .search-bar input {
   flex: 1;
